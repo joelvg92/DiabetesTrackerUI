@@ -1,5 +1,5 @@
-function getTime() {
-  var timeSplit = document.getElementById('time').value.split(':'),
+function getTime(field) {
+  var timeSplit = document.getElementById(field).value.split(':'),
       hours,
       minutes,
       meridian;
@@ -18,6 +18,38 @@ function getTime() {
   }
   return (hours + ':' + minutes + ' ' + meridian);
 }
+
+var timer = null;
+$('#mealName').keyup(function(){
+  clearTimeout(timer);
+  timer = setTimeout(searchFood, 1000)
+});
+
+function searchFood() {
+  var name = $("#mealName").val()
+  var sel = document.getElementById('results');
+  var opt = null;
+  $.ajax({
+    type: "GET",
+    url:"http://localhost:8080/food/find?foodName="+ name,
+    success: function (data) {
+      a = document.createElement("DIV");
+      a.setAttribute("id", "autocomplete-list"+Math.floor(Math.random() * 10));
+      a.setAttribute("class", "autocomplete-items");
+      sel.appendChild(a);
+      for (var i = 0, len = data.branded.length; i < len; i++) {
+        b = document.createElement("DIV");
+        b.innerHTML+= "<strong>" + data.branded[i].food_name + "</strong>";
+        a.appendChild(b);
+      }
+      console.log(data.branded[0].food_name);
+    },
+    error: function (xhr, textStatus, errorThrown) {
+      console.log('Error: ' + xhr.responseText);
+    }
+  });
+}
+
 
 
 (function($) {
@@ -74,6 +106,16 @@ function getTime() {
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+//reset form
+  $("#closeBloodSugarReading").click(function(){
+    $("form#addReading").trigger("reset");
+    $("#successMessage").toggleClass('d-none');
+  });
+
+  $("#closeMeal").click(function(){
+    $("form#addMeal").trigger("reset");
+    $("#successMealMessage").toggleClass("d-none");
+  });
 
   $("form#loginForm").submit(function() {
     var username = $('#username').val();
@@ -98,10 +140,9 @@ function getTime() {
 
   $("form#addReading").submit(function() {
     var reading = $('#reading').val();
-    var time = getTime();
+    var time = getTime("time");
     var patientId = localStorage.getItem("user");
     var description = $('#description1').val() === null?$('#description2').val():$('#description1').val();
-    console.log(JSON.stringify({ reading: reading, time: time,patientId:patientId,description:description }))
     $.ajax({
       type: "POST",
       url: "http://localhost:8080/observation",
@@ -109,10 +150,31 @@ function getTime() {
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
         console.log(response);
+        $("#successMessage").toggleClass('d-none');
       },
       error: function(xhr, textStatus, errorThrown) {
         console.log("error");
-        //$("#errorMessage").removeClass('d-none');
+      }
+    });
+    return false;
+  });
+
+  $("form#addMeal").submit(function() {
+    var mealName = $('#mealName').val();
+    var time = getTime("mealTime");
+    var patientId = localStorage.getItem("user");
+    var mealPortion = $('#mealPortion').val();
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8080/nutritionOrder",
+      data: JSON.stringify({patientId:patientId,name:mealName , dosage: mealPortion,unit:"pounds", time: time}),
+      contentType: 'application/json',
+      success: function(response, textStatus, xhr) {
+        console.log(response);
+        $("#successMealMessage").toggleClass('d-none');
+      },
+      error: function(xhr, textStatus, errorThrown) {
+        console.log("error");
       }
     });
     return false;

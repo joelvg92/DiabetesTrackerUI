@@ -19,6 +19,31 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            /*position the autocomplete items to be the same width as the container:*/
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+
+        .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #d4d4d4;
+        }
+
+        /*when hovering an item:*/
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+    </style>
     <script>
         function myFunction() {
             let userId = localStorage.getItem("user");
@@ -531,19 +556,67 @@
                                                                     <input class="form-check-input" type="checkbox" id="description2" value="After meal">
                                                                     <label class="form-check-label" for="description2">After meal</label>
                                                                 </div>
-                                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                                <button type="submit" id="bloodSugarReading" class="btn btn-primary">Submit</button>
+                                                                </br>
+                                                                <div class="alert alert-success d-none" role="alert" id="successMessage">
+                                                                    Successfully added the record
+                                                                </div>
                                                             </form>
                                                         </div>
 
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                            <button type="button" id="closeBloodSugarReading" class="btn btn-danger" data-dismiss="modal">Close</button>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" class="list-group-item list-group-item-action">Add daily meal record</a>
+                                            <a href="#" data-toggle="modal" data-target="#addMealRecord" class="list-group-item list-group-item-action">Add meal record</a>
+                                            <!-- The Modal -->
+                                            <div class="modal" id="addMealRecord">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <!-- Modal Header -->
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Add blood sugar reading</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+                                                            <form action=""  id="addMeal" method="post">
+                                                                <div class="form-group">
+                                                                    <label for="reading">Enter meal name:</label>
+                                                                    <input type="text" class="form-control" id="mealName" placeholder="" name="mealName" required>
+                                                                    <div id="results"></div>
+<!--                                                                    <select class="custom-select" id="results">-->
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="reading">Enter meal portion:</label>
+                                                                    <input type="text" class="form-control" id="mealPortion" placeholder="" name="mealPortion" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="time">Default Time Picker:</label>
+                                                                    <input type="time" id="mealTime" class="form-control" placeholder="Select time" required>
+                                                                </div>
+                                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                                </br>
+                                                                <div class="alert alert-success d-none" role="alert" id="successMealMessage">
+                                                                    Successfully added the record
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" id="closeMeal" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <a href="#" class="list-group-item list-group-item-action">Add daily medication record</a>
                                         </div>
                                     </div>
