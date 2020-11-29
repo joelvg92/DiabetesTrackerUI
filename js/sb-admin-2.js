@@ -19,13 +19,17 @@ function getTime(field) {
   return (hours + ':' + minutes + ' ' + meridian);
 }
 
-var timer = null;
+/*var timer = null;
 $('#mealName').keyup(function(){
   clearTimeout(timer);
   timer = setTimeout(searchFood, 1000)
 });
 
 function searchFood() {
+
+}*/
+
+/*function searchFood() {
   var name = $("#mealName").val()
   var sel = document.getElementById('results');
   var opt = null;
@@ -48,7 +52,7 @@ function searchFood() {
       console.log('Error: ' + xhr.responseText);
     }
   });
-}
+}*/
 
 
 
@@ -164,10 +168,11 @@ function searchFood() {
     var time = getTime("mealTime");
     var patientId = localStorage.getItem("user");
     var mealPortion = $('#mealPortion').val();
+    var unit= $('#foodInfo').val();
     $.ajax({
       type: "POST",
       url: "http://localhost:8080/nutritionOrder",
-      data: JSON.stringify({patientId:patientId,name:mealName , dosage: mealPortion,unit:"pounds", time: time}),
+      data: JSON.stringify({patientId:patientId,name:mealName , dosage: mealPortion,unit:unit, time: time}),
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
         console.log(response);
@@ -180,4 +185,57 @@ function searchFood() {
     return false;
   });
 
+  $("#searchFoodButton").click(function(){
+    var name = $("#mealName").val()
+    var sel = document.getElementById('results');
+    var opt = null;
+    var resultSet = null;
+    $.ajax({
+      type: "GET",
+      url:"http://localhost:8080/food/find?foodName="+ name,
+      success: function (data) {
+        resultSet = data.branded;
+        $('#searchFood').modal('toggle');
+        var resultstring='<table class="table">';
+        resultstring+= '<th>'+ 'No' + '</th>';
+        resultstring+= '<th>'+ 'Food name' + '</th>';
+        resultstring+= '<th>'+ 'Calories' + '</th>';
+        resultstring+= '<th>'+ 'Serving quantity' + '</th>';
+        resultstring+= '<th>'+ 'Select' + '</th>';
+        $(resultSet).each(function(i, result) {
+          resultstring+='<tr>';
+            resultstring+='<td>'+ i+ '</td>';
+            resultstring+='<td>'+ result.food_name + '</td>';
+            resultstring+='<td>'+ result.nf_calories + '</td>';
+            resultstring+='<td>'+ result.serving_qty + '</td>';
+            resultstring+="<td><button id='selectFoodButton'  type='button' class='btn btn-primary'>Select</button></td>";
+          resultstring+='</tr>';
+        });
+        resultstring+='</table>';
+        $('#searchFoodTable').html(resultstring);
+        //console.log(data.branded[0].food_name);
+      },
+      error: function (xhr, textStatus, errorThrown) {
+        console.log('Error: ' + xhr.responseText);
+      }
+    });
+  });
+
+
+  $("#searchFood #searchFoodTable").on("click", "#selectFoodButton", function(){
+    var $row = $(this).closest("tr"),       // Finds the closest row <tr>
+        $tds = $row.find("td");             // Finds all children <td> elements
+    var result='';
+    $.each($tds, function() {               // Visits every single <td> element
+      console.log($(this).text());        // Prints out the text within the <td>
+      result+=$(this).text()+':';
+    });
+    $('#searchFood').modal('hide');
+    $('#foodInfo').val(result);
+    $('#mealName').val(result.split(":")[1]);
+  });
+
+  $("#closeSearch").click(function(){
+    $('#searchFood').modal('hide');
+  });
 })(jQuery); // End of use strict
