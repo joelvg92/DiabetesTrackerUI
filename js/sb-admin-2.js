@@ -165,7 +165,7 @@ $('#mealName').keyup(function(){
     var medicationTime = getTime("medicationTime");
     var patientId = localStorage.getItem("user");
     var medicationDosage = $('#medicationDosage').val();
-    var unit= $('#medicalInfoInfo').val();
+    var unit= $('#medicationUnit').val();
     $.ajax({
       type: "POST",
       url: "http://localhost:8080/medication",
@@ -180,6 +180,40 @@ $('#mealName').keyup(function(){
       }
     });
     return false;
+  });
+
+  $("#pastMedications").click(function(){
+    var patientId = localStorage.getItem("user");
+    var resultSet = null;
+    $.ajax({
+      type: "GET",
+      url:"http://localhost:8080/medication/"+ patientId,
+      success: function (data) {
+        resultSet = data;
+        //$('#searchFood').modal('toggle');
+        var resultstring='<table class="table">';
+        resultstring+= '<th>'+ 'No' + '</th>';
+        resultstring+= '<th>'+ 'Time Recorded' + '</th>';
+        resultstring+= '<th>'+ 'Medication Name' + '</th>';
+        resultstring+= '<th>'+ 'Dosage/Quantity' + '</th>';
+        resultstring+= '<th>'+ 'Unit' + '</th>';
+        $(resultSet).each(function(i, result) {
+          resultstring+='<tr>';
+          resultstring+='<td>'+ i + '</td>';
+          resultstring+='<td>'+ result.time + '</td>';
+          resultstring+='<td>'+ result.medicationName + '</td>';
+          resultstring+='<td>'+ result.dosage.split(" ")[0] + '</td>';
+          resultstring+='<td>'+ result.dosage.split(" ")[1] + '</td>';
+          resultstring+='</tr>';
+        });
+        resultstring+='</table>';
+        $('#getMedicationsTable').html(resultstring);
+        //console.log(data.branded[0].food_name);
+      },
+      error: function (xhr, textStatus, errorThrown) {
+        console.log('Error: ' + xhr.responseText);
+      }
+    });
   });
 
   $("#searchFoodButton").click(function(){

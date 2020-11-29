@@ -503,7 +503,7 @@
                                             <a href="#" data-toggle="modal" data-target="#addBloodSugarReading" class="list-group-item list-group-item-action">Add daily blood sugar reading</a>
                                             <!-- The Modal -->
                                             <div class="modal" id="addBloodSugarReading">
-                                                <div class="modal-dialog">
+                                                <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
 
                                                         <!-- Modal Header -->
@@ -550,7 +550,7 @@
                                             <a href="#" data-toggle="modal" data-target="#addMealRecord" class="list-group-item list-group-item-action">Add daily meal record</a>
                                             <!-- The Modal -->
                                             <div class="modal" id="addMealRecord">
-                                                <div class="modal-dialog">
+                                                <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
 
                                                         <!-- Modal Header -->
@@ -574,7 +574,7 @@
                                                                         </span>
                                                                     </div>
                                                                     <div class="modal" id="searchFood">
-                                                                        <div class="modal-dialog">
+                                                                        <div class="modal-dialog modal-lg">
                                                                             <div class="modal-content">
 
                                                                                 <!-- Modal Header -->
@@ -623,7 +623,7 @@
                                             </div>
                                             <a href="#" data-toggle="modal" data-target="#addMedicalRecord"  class="list-group-item list-group-item-action">Add daily medication record</a>
                                             <div class="modal" id="addMedicalRecord">
-                                                <div class="modal-dialog">
+                                                <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
 
                                                         <!-- Modal Header -->
@@ -647,7 +647,7 @@
                                                                         </span>
                                                                     </div>
                                                                     <div class="modal" id="searchMedicine">
-                                                                        <div class="modal-dialog">
+                                                                        <div class="modal-dialog modal-lg">
                                                                             <div class="modal-content">
 
                                                                                 <!-- Modal Header -->
@@ -712,7 +712,30 @@
                                             <div class="list-group">
                                                 <a href="#" class="list-group-item list-group-item-action">View daily blood sugar reading</a>
                                                 <a href="#" class="list-group-item list-group-item-action">View daily meal record</a>
-                                                <a href="#" class="list-group-item list-group-item-action">View daily medication record</a>
+                                                <a href="#" id="pastMedications" data-toggle="modal" data-target="#getMedications" class="list-group-item list-group-item-action">View daily medication record</a>
+                                                <div class="modal" id="getMedications">
+                                                    <div class="modal-dialog modal-lg modal-lg">
+                                                        <div class="modal-content">
+
+                                                            <!-- Modal Header -->
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">View daily meal record</h4>
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            </div>
+
+                                                            <!-- Modal body -->
+                                                            <div class="modal-body">
+                                                            <div id="getMedicationsTable"></div>
+                                                            </div>
+
+                                                            <!-- Modal footer -->
+                                                            <div class="modal-footer">
+                                                                <button type="button" id="closeGetMedications" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -742,7 +765,7 @@
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
