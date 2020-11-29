@@ -1,3 +1,25 @@
+function getTime() {
+  var timeSplit = document.getElementById('time').value.split(':'),
+      hours,
+      minutes,
+      meridian;
+  hours = timeSplit[0];
+  minutes = timeSplit[1];
+  if (hours > 12) {
+    meridian = 'PM';
+    hours -= 12;
+  } else if (hours < 12) {
+    meridian = 'AM';
+    if (hours == 0) {
+      hours = 12;
+    }
+  } else {
+    meridian = 'PM';
+  }
+  return (hours + ':' + minutes + ' ' + meridian);
+}
+
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -69,6 +91,28 @@
       error: function(xhr, textStatus, errorThrown) {
         console.log("error");
         $("#errorMessage").removeClass('d-none');
+      }
+    });
+    return false;
+  });
+
+  $("form#addReading").submit(function() {
+    var reading = $('#reading').val();
+    var time = getTime();
+    var patientId = localStorage.getItem("user");
+    var description = $('#description1').val() === null?$('#description2').val():$('#description1').val();
+    console.log(JSON.stringify({ reading: reading, time: time,patientId:patientId,description:description }))
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8080/observation",
+      data: JSON.stringify({patientId:patientId,description:description , reading: reading, time: time}),
+      contentType: 'application/json',
+      success: function(response, textStatus, xhr) {
+        console.log(response);
+      },
+      error: function(xhr, textStatus, errorThrown) {
+        console.log("error");
+        //$("#errorMessage").removeClass('d-none');
       }
     });
     return false;
