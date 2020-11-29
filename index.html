@@ -500,7 +500,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="list-group">
-                                            <a href="#" data-toggle="modal" data-target="#addBloodSugarReading" class="list-group-item list-group-item-action">Add blood sugar reading</a>
+                                            <a href="#" data-toggle="modal" data-target="#addBloodSugarReading" class="list-group-item list-group-item-action">Add daily blood sugar reading</a>
                                             <!-- The Modal -->
                                             <div class="modal" id="addBloodSugarReading">
                                                 <div class="modal-dialog">
@@ -547,7 +547,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" data-toggle="modal" data-target="#addMealRecord" class="list-group-item list-group-item-action">Add meal record</a>
+                                            <a href="#" data-toggle="modal" data-target="#addMealRecord" class="list-group-item list-group-item-action">Add daily meal record</a>
                                             <!-- The Modal -->
                                             <div class="modal" id="addMealRecord">
                                                 <div class="modal-dialog">
@@ -621,7 +621,83 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="#" class="list-group-item list-group-item-action">Add daily medication record</a>
+                                            <a href="#" data-toggle="modal" data-target="#addMedicalRecord"  class="list-group-item list-group-item-action">Add daily medication record</a>
+                                            <div class="modal" id="addMedicalRecord">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <!-- Modal Header -->
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Add daily medication record</h4>
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+                                                            <form action=""  id="addMedical" method="post">
+                                                                <div class="form-group">
+                                                                    <input type="hidden" id="medicalInfo" name="medicalInfo">
+                                                                    <label for="reading">Enter medicine name:</label>
+                                                                    <div class ="input-group">
+                                                                        <input type="search" class="form-control py-2" id="medicineName"  placeholder="" name="medicineName" required>
+                                                                        <span class="input-group-append">
+                                                                        <button class="btn btn-outline-secondary" id="searchMedicineButton" type="button">
+                                                                            <i class="fa fa-search"></i>
+                                                                        </button>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="modal" id="searchMedicine">
+                                                                        <div class="modal-dialog">
+                                                                            <div class="modal-content">
+
+                                                                                <!-- Modal Header -->
+                                                                                <div class="modal-header">
+                                                                                    <h4 class="modal-title">Search Medicine result</h4>
+                                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                                </div>
+
+                                                                                <!-- Modal body -->
+                                                                                <div class="modal-body">
+                                                                                    <div id ="searchMedicineTable"></div>
+                                                                                </div>
+
+                                                                                <!-- Modal footer -->
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button" id="closeMedicationSearch" class="btn btn-danger">Close</button>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="reading">Enter medication dosage/qty:</label>
+                                                                    <input type="text" class="form-control" id="medicationDosage" placeholder="" name="medicationDosage" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="reading">Enter medication unit:</label>
+                                                                    <input type="text" class="form-control" id="medicationUnit" placeholder="" name="medicationUnit" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="time">Default Time Picker:</label>
+                                                                    <input type="time" id="medicationTime" class="form-control" placeholder="Select time" required>
+                                                                </div>
+                                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                                </br>
+                                                                <div class="alert alert-success d-none" role="alert" id="successMedicationMessage">
+                                                                    Successfully added the record
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" id="closeMedicineSearch" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -23,37 +23,7 @@ function getTime(field) {
 $('#mealName').keyup(function(){
   clearTimeout(timer);
   timer = setTimeout(searchFood, 1000)
-});
-
-function searchFood() {
-
-}*/
-
-/*function searchFood() {
-  var name = $("#mealName").val()
-  var sel = document.getElementById('results');
-  var opt = null;
-  $.ajax({
-    type: "GET",
-    url:"http://localhost:8080/food/find?foodName="+ name,
-    success: function (data) {
-      a = document.createElement("DIV");
-      a.setAttribute("id", "autocomplete-list"+Math.floor(Math.random() * 10));
-      a.setAttribute("class", "autocomplete-items");
-      sel.appendChild(a);
-      for (var i = 0, len = data.branded.length; i < len; i++) {
-        b = document.createElement("DIV");
-        b.innerHTML+= "<strong>" + data.branded[i].food_name + "</strong>";
-        a.appendChild(b);
-      }
-      console.log(data.branded[0].food_name);
-    },
-    error: function (xhr, textStatus, errorThrown) {
-      console.log('Error: ' + xhr.responseText);
-    }
-  });
-}*/
-
+});*/
 
 
 (function($) {
@@ -121,6 +91,11 @@ function searchFood() {
     $("#successMealMessage").toggleClass("d-none");
   });
 
+  $("#closeMedicationSearch").click(function(){
+    $("form#addMedical").trigger("reset");
+    $("#successMealMessage").toggleClass("d-none");
+  });
+
   $("form#loginForm").submit(function() {
     var username = $('#username').val();
     var password = $('#password').val();
@@ -185,10 +160,30 @@ function searchFood() {
     return false;
   });
 
+  $("form#addMedical").submit(function() {
+    var medicineName = $('#medicineName').val();
+    var medicationTime = getTime("medicationTime");
+    var patientId = localStorage.getItem("user");
+    var medicationDosage = $('#medicationDosage').val();
+    var unit= $('#medicalInfoInfo').val();
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8080/medication",
+      data: JSON.stringify({patientId:patientId,name:medicineName , dosage: medicationDosage,unit:unit, time: medicationTime}),
+      contentType: 'application/json',
+      success: function(response, textStatus, xhr) {
+        console.log(response);
+        $("#successMedicationMessage").toggleClass('d-none');
+      },
+      error: function(xhr, textStatus, errorThrown) {
+        console.log("error");
+      }
+    });
+    return false;
+  });
+
   $("#searchFoodButton").click(function(){
     var name = $("#mealName").val()
-    var sel = document.getElementById('results');
-    var opt = null;
     var resultSet = null;
     $.ajax({
       type: "GET",
@@ -221,6 +216,40 @@ function searchFood() {
     });
   });
 
+  $("#searchMedicineButton").click(function(){
+    var name = $("#medicineName").val()
+    var resultSet = null;
+    $.ajax({
+      type: "GET",
+      url:"http://localhost:8080/medication/find?medicationName="+ name,
+      success: function (data) {
+        resultSet = data;
+        $('#searchMedicine').modal('toggle');
+        var resultstring='<table class="table">';
+        resultstring+= '<th>'+ 'No' + '</th>';
+        resultstring+= '<th>'+ 'Medicine name' + '</th>';
+        resultstring+= '<th>'+ 'Type' + '</th>';
+        resultstring+= '<th>'+ 'Select' + '</th>';
+        $(resultSet).each(function(i, result) {
+          var unescapedString = unescape(result);
+          var splitVal = unescapedString.split(",")
+          resultstring+='<tr>';
+          resultstring+='<td>'+ i+ '</td>';
+          resultstring+='<td>'+ splitVal[2].replaceAll('"',"") + '</td>';
+          resultstring+='<td>'+ splitVal[3].replaceAll('"',"") + '</td>';
+          resultstring+="<td><button id='selectMedicineButton'  type='button' class='btn btn-primary'>Select</button></td>";
+          resultstring+='</tr>';
+        });
+        resultstring+='</table>';
+        $('#searchMedicineTable').html(resultstring);
+        //console.log(data.branded[0].food_name);
+      },
+      error: function (xhr, textStatus, errorThrown) {
+        console.log('Error: ' + xhr.responseText);
+      }
+    });
+  });
+
 
   $("#searchFood #searchFoodTable").on("click", "#selectFoodButton", function(){
     var $row = $(this).closest("tr"),       // Finds the closest row <tr>
@@ -237,5 +266,38 @@ function searchFood() {
 
   $("#closeSearch").click(function(){
     $('#searchFood').modal('hide');
+  });
+
+  $("#searchMedicine #searchMedicineTable").on("click", "#selectMedicineButton", function(){
+    var $row = $(this).closest("tr"),       // Finds the closest row <tr>
+        $tds = $row.find("td");             // Finds all children <td> elements
+    var result='';
+    $.each($tds, function() {               // Visits every single <td> element
+      result+=$(this).text()+':';
+    });
+    $('#searchMedicine').modal('hide');
+    $('#medicalInfo').val(result);
+    var resultSplit=result.split(":");
+    var resultSplit2 = resultSplit[1].split(" ");
+    var word =null;
+    for(var i=0; i<resultSplit2.length; i++){
+      if(resultSplit2[i].includes("MG") || resultSplit2[i].includes("MG\\ML") || resultSplit2[i].includes("ML")){
+        word = resultSplit2[i];
+      }
+    }
+    if(word!==null) {
+      $('#medicineName').val(resultSplit[1].replaceAll(word, ""));
+      $('#medicationUnit').val(word);
+    }else{
+      $('#medicineName').val(resultSplit[1]);
+      var med = $('#medicationUnit').val();
+      console.log(med);
+      if(med!==null){}
+      $('#medicationUnit').val("");
+    }
+  });
+
+  $("#closeMedicationSearch").click(function(){
+    $('#searchMedicine').modal('hide');
   });
 })(jQuery); // End of use strict
