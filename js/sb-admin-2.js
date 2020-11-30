@@ -1,3 +1,161 @@
+function formatDate(date){
+  var dd = date.getDate();
+  var mm = date.getMonth()+1;
+  var yyyy = date.getFullYear();
+  if(dd<10) {dd='0'+dd}
+  if(mm<10) {mm='0'+mm}
+  date = mm+'/'+dd+'/'+yyyy;
+  return date
+}
+
+function formateDatev2(date){
+  var date = new Date(date);
+  return ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear();
+}
+
+function Last1Days () {
+  var result = [];
+  for (var i=1; i>0; i--) {
+    var d = new Date();
+    d.setDate(d.getDate() - i);
+    result.push( formatDate(d) )
+  }
+
+  return result;
+}
+
+function Last7Days () {
+  var result = [];
+  for (var i=1; i>0; i--) {
+    var d = new Date();
+    d.setDate(d.getDate() - i);
+    result.push( formatDate(d) )
+  }
+
+  return result;
+}
+
+function groupBy(objectArray, property) {
+  return objectArray.reduce(function (acc, obj) {
+    var key = obj[property];
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(obj);
+    return acc;
+  }, {});
+}
+
+function updateData(objectArray){
+  for(var i=0; i<objectArray.length; i++){
+    var val =objectArray[i].time.split(":")[0];
+    objectArray[i].time = val;
+  }
+  return objectArray;
+}
+
+function updateData2(objectArray,date){
+  for(var i=0; i<objectArray.length; i++){
+    var date1=new Date(date);
+    var date2=new Date(formateDatev2(objectArray[i].time));
+    if(date2<date1){
+      objectArray.splice(i,1);
+    }
+  }
+  return objectArray;
+}
+
+
+function getData(){
+  var patientId = localStorage.getItem("user");
+  $.ajax({
+    type: "GET",
+    url:"http://localhost:8080/nutritionOrder/"+ patientId,
+    async: true,
+    success: function (data) {
+      var resultSet = updateData(data);
+      var resultSet2=updateData2(resultSet,Last1Days()[0]);
+      var groups = groupBy(resultSet2,'time');
+      var sum=0;
+      for(var key in groups){
+        for(var i =0; i<groups[key].length; i++){
+          sum+=Number(groups[key][i].calories);
+        }
+      }
+      $('#TotalCalorieCount').text(sum);
+    },
+    error: function (xhr, textStatus, errorThrown) {
+      console.log('Error: ' + xhr.responseText);
+    }
+  })
+}
+
+function getData2(){
+  var patientId = localStorage.getItem("user");
+  var resultSet = null;
+  var results = [];
+  $.ajax({
+    type: "GET",
+    url:"http://localhost:8080/nutritionOrder/"+ patientId,
+    async: true,
+    success: function (data) {
+      resultSet = updateData(data);
+      var resultSet2=updateData2(resultSet,Last7Days()[0]);
+      var groups = groupBy(resultSet2,'time');
+      var counter=0;
+      for(var key in groups){
+        var sum=0;
+        for(var i =0; i<groups[key].length; i++){
+          sum+=Number(groups[key][i].calories);
+        }
+        results[counter] =sum;
+        counter++;
+      }
+      var dataArr= Math.max.apply(Math, results.map(function(o) { return o;}))
+      if(Number(dataArr) > 2000){
+        $('#foodIntakeStatus').text('Food intake is high, please control the diet!!');
+      }else{
+        $('#foodIntakeStatus').text('Food intake is normal,good job!!');
+      }
+    },
+    error: function (xhr, textStatus, errorThrown) {
+      console.log('Error: ' + xhr.responseText);
+    }
+  })
+  return results;
+}
+
+function getData3(){
+  var patientId = localStorage.getItem("user");
+  var resultSet = null;
+  var results = [];
+  $.ajax({
+    type: "GET",
+    url:"http://localhost:8080/observation/"+ patientId,
+    async: true,
+    success: function (data) {
+      resultSet = updateData(data);
+      var resultSet2=updateData2(resultSet,Last7Days()[0]);
+      var groups = groupBy(resultSet2,'time');
+      var counter=0;
+      for(var key in groups){
+        var dataArr= Math.max.apply(Math, groups[key].map(function(o) { return o.diabeticRecord; }))
+        results[counter] =dataArr;
+        counter++;
+      }
+      var maxVal= Math.max.apply(Math, results.map(function(o) { return o; }))
+      if(Number(maxVal) > 200){
+        $('#diabeticRecordStatus').text('Diabetic record is high!!');
+      }else{
+        $('#diabeticRecordStatus').text('Diabetic record is normal,good job!!');
+      }
+    },
+    error: function (xhr, textStatus, errorThrown) {
+      console.log('Error: ' + xhr.responseText);
+    }
+  })
+}
+
 function getTime(field) {
   var timeSplit = document.getElementById(field).value.split(':'),
       hours,
@@ -18,12 +176,6 @@ function getTime(field) {
   }
   return (hours + ':' + minutes + ' ' + meridian);
 }
-
-/*var timer = null;
-$('#mealName').keyup(function(){
-  clearTimeout(timer);
-  timer = setTimeout(searchFood, 1000)
-});*/
 
 
 (function($) {
@@ -86,6 +238,21 @@ $('#mealName').keyup(function(){
     $("#successMessage").toggleClass('d-none');
   });
 
+  $("#closePastMealsModal").click(function(){
+    $("#pastMealsModal").trigger("reset");
+    $('#pastMealsModal').modal('hide');
+  });
+
+  $("#closeGetMedications").click(function(){
+    $("#getMedications").trigger("reset");
+    $('#getMedications').modal('hide');
+  });
+
+  $("#closePastObservationsModal").click(function(){
+    $("#pastObservationsModal").trigger("reset");
+    $('#pastObservationsModal').modal('hide');
+  });
+
   $("#closeMeal").click(function(){
     $("form#addMeal").trigger("reset");
     $("#successMealMessage").toggleClass("d-none");
@@ -107,7 +274,8 @@ $('#mealName').keyup(function(){
       success: function(response, textStatus, xhr) {
         console.log(response);
         localStorage.setItem("user", response.patientId);
-        window.location = "index.html?user="+response.patientId;
+        localStorage.setItem("username", response.username);
+        window.location = "index.html";
       },
       error: function(xhr, textStatus, errorThrown) {
         console.log("error");

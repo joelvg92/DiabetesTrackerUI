@@ -126,7 +126,7 @@ var myLineChart = new Chart(ctx, {
   data: {
     labels: result,
     datasets: [{
-      label: "Earnings",
+      label: "Diabetic record",
       lineTension: 0.3,
       backgroundColor: "rgba(78, 115, 223, 0.05)",
       borderColor: "rgba(78, 115, 223, 1)",
@@ -202,7 +202,7 @@ var myLineChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ': ' + number_format(tooltipItem.yLabel) + ' mg/dL';
         }
       }
     }
