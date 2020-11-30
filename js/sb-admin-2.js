@@ -216,6 +216,70 @@ $('#mealName').keyup(function(){
     });
   });
 
+  $("#pastObservations").click(function(){
+    var patientId = localStorage.getItem("user");
+    var resultSet = null;
+    $.ajax({
+      type: "GET",
+      url:"http://localhost:8080/observation/"+ patientId,
+      success: function (data) {
+        resultSet = data;
+        //$('#searchFood').modal('toggle');
+        var resultstring='<table class="table">';
+        resultstring+= '<th>'+ 'No' + '</th>';
+        resultstring+= '<th>'+ 'Time Recorded' + '</th>';
+        resultstring+= '<th>'+ 'Diabetic Value' + '</th>';
+        $(resultSet).each(function(i, result) {
+          resultstring+='<tr>';
+          resultstring+='<td>'+ i + '</td>';
+          resultstring+='<td>'+ result.time + '</td>';
+          resultstring+='<td>'+ result.diabeticRecord +' mg/dL' + '</td>';
+          resultstring+='</tr>';
+        });
+        resultstring+='</table>';
+        $('#pastObservationsTable').html(resultstring);
+        //console.log(data.branded[0].food_name);
+      },
+      error: function (xhr, textStatus, errorThrown) {
+        console.log('Error: ' + xhr.responseText);
+      }
+    });
+  });
+
+  $("#pastMeals").click(function(){
+    var patientId = localStorage.getItem("user");
+    var resultSet = null;
+    $.ajax({
+      type: "GET",
+      url:"http://localhost:8080/nutritionOrder/"+ patientId,
+      success: function (data) {
+        resultSet = data;
+        //$('#searchFood').modal('toggle');
+        var resultstring='<table class="table">';
+        resultstring+= '<th>'+ 'No' + '</th>';
+        resultstring+= '<th>'+ 'Time Recorded' + '</th>';
+        resultstring+= '<th>'+ 'Food Name' + '</th>';
+        resultstring+= '<th>'+ 'Meal Size' + '</th>';
+        resultstring+= '<th>'+ 'Calories' + '</th>';
+        $(resultSet).each(function(i, result) {
+          resultstring+='<tr>';
+          resultstring+='<td>'+ i + '</td>';
+          resultstring+='<td>'+ result.time + '</td>';
+          resultstring+='<td>'+ result.foodName + '</td>';
+          resultstring+='<td>'+ result.mealSize + '</td>';
+          resultstring+='<td>'+ result.calories + '</td>';
+          resultstring+='</tr>';
+        });
+        resultstring+='</table>';
+        $('#pastMealsTable').html(resultstring);
+        //console.log(data.branded[0].food_name);
+      },
+      error: function (xhr, textStatus, errorThrown) {
+        console.log('Error: ' + xhr.responseText);
+      }
+    });
+  });
+
   $("#searchFoodButton").click(function(){
     var name = $("#mealName").val()
     var resultSet = null;

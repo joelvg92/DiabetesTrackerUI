@@ -710,8 +710,54 @@
                                     <div class="card-body">
                                         <div class="card-body">
                                             <div class="list-group">
-                                                <a href="#" class="list-group-item list-group-item-action">View daily blood sugar reading</a>
-                                                <a href="#" class="list-group-item list-group-item-action">View daily meal record</a>
+                                                <a href="#" id="pastObservations" data-toggle="modal" data-target="#pastObservationsModal" class="list-group-item list-group-item-action">View daily blood sugar reading</a>
+                                                <div class="modal" id="pastObservationsModal">
+                                                    <div class="modal-dialog modal-lg modal-lg">
+                                                        <div class="modal-content">
+
+                                                            <!-- Modal Header -->
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">View daily meal record</h4>
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            </div>
+
+                                                            <!-- Modal body -->
+                                                            <div class="modal-body">
+                                                                <div id="pastObservationsTable"></div>
+                                                            </div>
+
+                                                            <!-- Modal footer -->
+                                                            <div class="modal-footer">
+                                                                <button type="button" id="closePastObservationsModal" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" id="pastMeals" data-toggle="modal" data-target="#pastMealsModal" class="list-group-item list-group-item-action">View daily meal record</a>
+                                                <div class="modal" id="pastMealsModal">
+                                                    <div class="modal-dialog modal-lg modal-lg">
+                                                        <div class="modal-content">
+
+                                                            <!-- Modal Header -->
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">View daily meal record</h4>
+                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            </div>
+
+                                                            <!-- Modal body -->
+                                                            <div class="modal-body">
+                                                                <div id="pastMealsTable"></div>
+                                                            </div>
+
+                                                            <!-- Modal footer -->
+                                                            <div class="modal-footer">
+                                                                <button type="button" id="closePastMealsModal" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <a href="#" id="pastMedications" data-toggle="modal" data-target="#getMedications" class="list-group-item list-group-item-action">View daily medication record</a>
                                                 <div class="modal" id="getMedications">
                                                     <div class="modal-dialog modal-lg modal-lg">
