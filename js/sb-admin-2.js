@@ -285,6 +285,31 @@ function getTime(field) {
     return false;
   });
 
+  $("form#signup").submit(function() {
+    var username = $('#username').val();
+    var password = $('#password').val();
+    var name = $('#firstName').val() + " "+ $('#lastName').val();
+    var gender = $('#gender').val();
+    var age = $('#age').val();
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8080/signup",
+      data: JSON.stringify({ username: username, password: password, name:name,gender:gender,age:age,email:'testemail123@gmail.com',phone:'2012203000',dob:'1993-10-25' }),
+      contentType: 'application/json',
+      success: function(response, textStatus, xhr) {
+        console.log(response);
+        localStorage.setItem("user", response.patientId);
+        localStorage.setItem("username", response.username);
+        window.location = "index.html";
+      },
+      error: function(xhr, textStatus, errorThrown) {
+        console.log("error");
+        $("#errorMessage").removeClass('d-none');
+      }
+    });
+    return false;
+  });
+
   $("form#addReading").submit(function() {
     var reading = $('#reading').val();
     var time = getTime("time");
