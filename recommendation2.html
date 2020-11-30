@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Blank</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <h1>
+                        Top 50 foods for diabetic patients
+                    </h1>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Quinoa</h2>
+                        </div>
+                    </div>
+                    <figure id="384734" class="alignnone"><img class="alignnone wp-image-384734 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/white-quinoa-bowl.jpg?resize=600%2C439&amp;ssl=1 600w" alt="quinoa" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>This nutty, trendy whole grain is a good source of fiber and protein, making it a smart pick for a diabetes diet,&nbsp;<a href="http://sarahkoszyk.com/" target="_blank" rel="noopener noreferrer">Sarah Koszyk</a>, RDN tells us. "With the fiber and protein combination found in quinoa, you'll feel fuller and have better blood sugar control. Protein also helps with the uptake of carbohydrates so the body can process them more easily. I suggest enjoying quinoa in a salad or casserole."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">100% Whole Wheat bread</h2>
+                        </div>
+                    </div>
+                    <figure id="399870"><img class="size-medium wp-image-399870 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=272%2C199&amp;ssl=1 272w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=473%2C346&amp;ssl=1 473w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2018/05/bread-on-kitchen-counter.jpg?resize=82%2C60&amp;ssl=1 82w" alt="Loaf of bread on kitchen counter in plastic bag" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p><a href="https://wexnermedical.osu.edu/departments/internal-medicine/dmrc/dmrc-team" target="_blank" rel="noopener noreferrer">Elizabeth Snyder</a>, RD, LD, CDE says you can still eat carbs if you're diabetic. You just have to watch out for portion sizes: "The trouble [with eating carbs as a diabetic] lies in eating more carbohydrates than we need, as the body will choose to store any extra energy as fat," she says. So, rather of cutting out carbs entirely, Snyder recommends switching to&nbsp;<a href="https://www.eatthis.com/best-complex-carbohydrates-to-eat-for-weight-loss/">complex carbs</a>, such as 100% whole wheat bread, which are higher in vitamins, minerals, and blood-sugar-managing fiber than their simple, refined counterparts.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Beans</h2>
+                        </div>
+                    </div>
+                    <figure id="354056" class="alignnone "><img class="alignnone wp-image-354056 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/137554920/black-beans-spoon.jpg?resize=600%2C439&amp;ssl=1 600w" alt="black beans" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>"Beans provide a notable combination of plant protein and soluble fiber that can help boost feelings of fullness and manage blood sugar levels,"&nbsp;<a href="http://jackienewgent.com/" target="_blank" rel="noopener noreferrer">Jackie Newgent</a>, RDN, culinary nutritionist, and author of&nbsp;<a href="https://amzn.to/2LtQwKS" target="_blank" rel="nofollow noopener noreferrer"><em>The All-Natural Diabetes Cookbook</em></a>&nbsp;explains. "Replacing some meat with beans can play a helpful role in heart health," which is particularly important for diabetics as heart disease is one of the most common complications of diabetes. Consider adding kidney beans to soups and black beans to your casseroles to boost your intake of the legumes.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Lentils</h2>
+                        </div>
+                    </div>
+                    <figure id="384727" class="alignnone"><img class="alignnone wp-image-384727 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=272%2C199&amp;ssl=1 272w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=473%2C346&amp;ssl=1 473w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/lentils-bowl-spoon.jpg?resize=82%2C60&amp;ssl=1 82w" alt="lentils" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Lentils are rich in something called&nbsp;<a href="https://www.eatthis.com/how-to-lose-weight-eating-resistant-starch/">resistant starch</a>: a type of carb that has a very minimal impact on your blood sugar levels because it passes through the body undigested and ultimately ends up feeding the healthy bacteria at the bottom of your digestive tract. So, not only will lentils help keep your blood sugar levels more even-keeled, they'll also help to improve your gut health.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Wild Salmon</h2>
+                        </div>
+                    </div>
+                    <figure id="384731" class="alignnone"><img class="alignnone wp-image-384731 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/salmon.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Salmon" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>"Salmon is a smart addition to anyone's eating plan, but for individuals with diabetes, it's especially beneficial,"&nbsp;<a href="https://www.lorizanini.com/" target="_blank" rel="noopener noreferrer">Lori Zanini</a>, RD, CDE tells us. Here's why: "It's a healthy protein source that will not raise blood sugar levels and will help to decrease the risk of heart disease and stroke&mdash;a major concern for diabetics." Salmon's heart-healthy qualities come from its high levels of&nbsp;<a href="https://www.eatthis.com/omega-3-foods/">omega-3 fatty acids</a>. This particular fat reduces levels of triglycerides, a risk factor for coronary heart disease, according to a review in the journal&nbsp;<a href="http://journals.aace.com/doi/10.4158/EP161445.RA?url_ver=Z39.88-2003&amp;rfr_id=ori:rid:crossref.org&amp;rfr_dat=cr_pub%3dpubmed" target="_blank" rel="noopener noreferrer"><em>Endocrine Practice</em></a>.</p>
+                    <div id="square-fixed-3" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier3">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Greek Yogurt</h2>
+                        </div>
+                    </div>
+                    <figure id="376319" class="alignnone"><img class="alignnone wp-image-376319 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/707694761/greek-yogurt-bowl-spoon.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Greek yogurt" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Looking for a protein-packed way to fuel your morning?&nbsp;<a href="https://www.eatthis.com/greek-yogurt/">Greek yogurt</a>&nbsp;is the answer. "It naturally contains both carbohydrates and protein, which is a perfect combination to help control hunger levels and blood sugars," says Koszyk. "Plus, choosing Greek yogurt will give you more protein and fewer carbohydrates than regular yogurt, which can help better control blood-sugar levels. Enjoy yogurt in a smoothie or as a snack paired with some berries and chia seeds."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Spinach</h2>
+                        </div>
+                    </div>
+                    <figure id="384697" class="alignnone"><img class="alignnone wp-image-384697 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=272%2C199&amp;ssl=1 272w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=473%2C346&amp;ssl=1 473w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/10/spinach.jpg?resize=82%2C60&amp;ssl=1 82w" alt="Spinach" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>"Leafy greens, like spinach, are great non-starchy vegetable options because they contain lutein, an important nutrient for eye health. This nutrient is essential for people with diabetes since they have a higher risk for blindness than those without diabetes," explains Newgent. That's not all spinach has going for it. A study published in the journal&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/21747015" target="_blank" rel="noopener noreferrer"><em>Archives of Internal Medicine</em></a>&nbsp;found that adults who consumed 4,069 milligrams of potassium per day had a 37 percent lower risk of heart disease compared to those who consumed only 1,793 milligrams. Just one cup of cooked spinach contains 839 milligrams of potassium (which is equivalent to what's in 2 medium bananas) or 20 percent of that target intake.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Berries</h2>
+                        </div>
+                    </div>
+                    <figure id="351698" class="alignnone "><img class="alignnone wp-image-351698 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=600%2C440&amp;ssl=1 600w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/110468421/mixed-berries.jpg?resize=266%2C195&amp;ssl=1 266w" alt="berries" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Craving a treat? Consider berries your go-to when your sweet tooth strikes. "Strawberries, blueberries, raspberries, and blackberries are all low on the glycemic index and are considered to be superfoods for diabetics," Koszyk explains. The combination of being low in sugar and&nbsp;<a href="https://www.eatthis.com/high-fiber-foods/">high in fiber</a>&nbsp;contributes to their diabetes-friendly ability to gradually raise blood sugars. An added bonus: according to two recent animal studies, consuming a diet rich in polyphenols&mdash;a naturally occurring chemical found abundantly in berries&mdash;can decrease the formation of fat cells by up to 73 percent!</p>
+                    <div id="square-fixed-4" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier4">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Broccoli</h2>
+                        </div>
+                    </div>
+                    <figure id="373999" class="alignnone"><img class="alignnone wp-image-373999 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=272%2C199&amp;ssl=1 272w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=473%2C346&amp;ssl=1 473w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/613509525/broccoli.jpg?resize=82%2C60&amp;ssl=1 82w" alt="Broccoli on a wooden cutting board" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>"Cruciferous vegetables like kale, broccoli, cauliflower, brussels sprouts and cabbage are high in something called sulforaphane,"&nbsp;<a href="http://www.everybodybliss.com/" target="_blank" rel="noopener noreferrer">Miriam Jacobson</a>, RD, CDN says. "The compound helps reduce oxidative stress and vascular complications associated with diabetes like heart disease and neuropathy, a term used to describe a problem with the nerves."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Ground Flaxseeds</h2>
+                        </div>
+                    </div>
+                    <figure id="389745" class="alignnone"><img class="alignnone size-medium wp-image-389745 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/11/ground-flaxseed.jpg?resize=183%2C133&amp;ssl=1 183w" alt="ground flaxseed" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Add a satisfying crunch to your favorite oatmeal, salad, soup, or smoothie with the help of ground flaxseeds, a potent superfood for people with diabetes. "Ground flaxseeds contain lignans (a plant-based chemical compound) and fiber which help maintain blood sugar levels and glycemic control," Koszyk explains.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Raw almonds</h2>
+                        </div>
+                    </div>
+                    <figure id="371040" class="alignnone"><img class="alignnone wp-image-371040 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/627018778/almonds-raw.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Raw almonds" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>"I often recommend an ounce of almonds as a snack," Zanini tells us. "Almonds don't raise blood sugar levels and are a&nbsp;<a href="https://www.eatthis.com/best-foods-to-eat-for-magnesium/">great source of magnesium</a>, a nutrient that improves insulin sensitivity."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Chia Seeds</h2>
+                        </div>
+                    </div>
+                    <figure id="374507" class="alignnone"><img class="alignnone wp-image-374507 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/122244809/chia-seeds-bowl.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Chia seeds" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>"Chia seeds are a heart-healthy fat that contains fiber and omega-3s," Koszyk explains. "Research suggests that chia seeds help control blood glucose. And it's all thanks to the fiber content slowing the passage of glucose into the blood. Also, fiber fills us up which reduces our appetite and helps us eat less." Koszyk suggests enjoying chia seeds in yogurt, fruit and veggie smoothies, or salads.</p>
+                    <div id="square-fixed-5" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier1">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Avocado</h2>
+                        </div>
+                    </div>
+                    <figure id="352621" class="alignnone "><img class="alignnone wp-image-352621 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/816924358/eat-avocado-seed.jpg?resize=600%2C439&amp;ssl=1 600w" alt="avocado" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>What's better than avocado toast? Perhaps it's the fact that this fatty fruit can help you maintain healthy blood sugar levels, making it one of the best foods for diabetics watching their blood glucose levels. "Avocados contain a significant amount of healthful fats and dietary fiber, which help slow carbohydrate digestion and absorption and prevent spikes in blood sugar," Newgent tells us.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Extra Virgin Olive Oil</h2>
+                        </div>
+                    </div>
+                    <figure id="367514" class="alignnone"><img class="alignnone wp-image-367514 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/330809584/olive-oil-v3.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Olive oil" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>It's time to upgrade your cooking oil. Extra virgin olive oil is rich in monounsaturated fats, which studies show can actually help&nbsp;<a href="https://www.eatthis.com/foods-to-lower-cholesterol/">lower levels of 'bad' LDL cholesterol</a>. This is particularly important since diabetics have a higher risk of experiencing a heart attack or stroke. And get this: Snyder says losing just 7 percent of your body weight (if you're overweight) can result in significant health benefits for diabetics. Luckily for you, EVOO is rich in oleic acid, which a&nbsp;<a href="http://www.jlr.org/content/48/9/1966.full" target="_blank" rel="noopener noreferrer"><em>Journal of Lipid Research</em></a>&nbsp;study found helps reduce lipogenesis, or fat formation.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Peanut Butter</h2>
+                        </div>
+                    </div>
+                    <figure id="349794" class="alignnone "><img class="alignnone wp-image-349794 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/937993707/peanut-butter-11-more-nutrition-myths-busted.jpg?resize=600%2C439&amp;ssl=1 600w" alt="peanut butter" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>"When living with diabetes, eating a filling breakfast is an essential way to start the day," says Erin Spitzberg, MS, RDN, CDE, and author of&nbsp;<em><a href="https://amzn.to/2LwN1TH" target="_blank" rel="nofollow noopener noreferrer">Eat Like a Normal Person</a></em>. "Adding a little fat for added satiety can help," she explains. She recommends pairing up your favorite breakfast carb&mdash;either a slice of whole grain toast, bowl of steel-cut oats, or high-fiber cereal&mdash;with 1 tablespoon of natural peanut butter. "The peanut butter adds approximately five grams of fat, which will help slow digestion and keep you full a little longer."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Kale</h2>
+                        </div>
+                    </div>
+                    <figure id="364400" class="alignnone"><img class="alignnone wp-image-364400 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=500%2C361&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=768%2C555&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=256%2C186&amp;ssl=1 256w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=354%2C256&amp;ssl=1 354w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=177%2C128&amp;ssl=1 177w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/477845967/leafy-kale.jpg?resize=600%2C434&amp;ssl=1 600w" alt="Kale" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <div id="square-fixed-6" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier2">&nbsp;</div>
+                    <p>Kale is called a superfood for good reason! Rich in fiber&mdash;with 16 grams, or over 60 percent of your daily recommended intake, of the digestion-slowing nutrient in just one cup&mdash;and low on the glycemic index, kale can help improve blood glucose control.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Garlic</h2>
+                        </div>
+                    </div>
+                    <figure id="376595" class="alignnone"><img class="alignnone wp-image-376595 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/338950145/garlic.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Garlic bulbs and cloves" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Despite what you may think, nixing sugar or salt doesn't have to be synonymous with bland, cardboard-like dishes. "So often, we think about what we can't eat when we start&nbsp;<a href="https://www.eatthis.com/stop-eating-sugar/">cutting out sugar</a>. Instead, focus on ways to add more flavor to the foods you are eating," suggests Zanini. "There are so many great ways to add flavor without adding sugar or salt." Add a couple of crushed cloves of garlic to your marinara sauce or saute broccoli in a blend of extra virgin olive oil, chopped garlic, and crushed red pepper flakes.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Cinnamon</h2>
+                        </div>
+                    </div>
+                    <figure id="1" class="alignnone ">
+                        <figure id="350286" class="alignnone"><img class="alignnone wp-image-350286 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/349849551/cinnamon-pays-splurge-on-food.jpg?resize=600%2C439&amp;ssl=1 600w" alt="cinnamon" data-recalc-dims="1" data-lazy-loaded="1" />
+                            
+                        </figure>
+                        
+                    </figure>
+                    <p>A series of reviews printed in the&nbsp;<a href="https://academic.oup.com/ajcn/article/85/6/1552/4632985" target="_blank" rel="noopener noreferrer"><em>American Journal of Clinical Nutrition</em></a>&nbsp;discovered that adding a heaping teaspoon of cinnamon to a starchy meal like&nbsp;<a href="https://www.eatthis.com/overnight-oat-recipes-for-weight-loss/">overnight oats</a>&nbsp;could help stabilize blood sugar, ward off insulin spikes, and decrease fasting blood sugar. Experts believe that the spice's powerful antioxidants, known as polyphenols, are at work; these active compounds have been proven to improve insulin sensitivity and, in turn, your body's ability to store fat and manage hunger cues.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Tuna Fish</h2>
+                        </div>
+                    </div>
+                    <figure id="353930" class="alignnone "><img class="alignnone wp-image-353930 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/898861803/tuna-can-open-overhead.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/898861803/tuna-can-open-overhead.jpg?w=1000&amp;ssl=1 1000w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/898861803/tuna-can-open-overhead.jpg?resize=768%2C576&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/898861803/tuna-can-open-overhead.jpg?resize=500%2C375&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/898861803/tuna-can-open-overhead.jpg?resize=600%2C450&amp;ssl=1 600w" alt="tuna" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Want to continue munching on your favorite crackers without fretting too much over your blood sugar levels? Consider pairing the crunchy snack with a can of tuna. Depending on the amount of healthy fats and protein you pair with your carb-laden snack, your body can digest the carbs much slower than you could if you ate the carbs alone. In fact,&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/28202475" target="_blank" rel="noopener noreferrer">Tufts University researchers</a>&nbsp;recently presented the results of a study which found that eating protein- and fat-rich tuna fish with a slice of white bread produced a slower rise in blood sugar than when eating carbs alone.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Asparagus</h2>
+                        </div>
+                    </div>
+                    <figure id="1" class="alignnone ">
+                        <figure id="359680" class="alignnone"><img class="alignnone wp-image-359680 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/424124149/grilled-asparagus.jpg?resize=600%2C439&amp;ssl=1 600w" alt="asparagus" data-recalc-dims="1" data-lazy-loaded="1" />
+                            
+                        </figure>
+                        
+                    </figure>
+                    <p>Your favorite grilled veggie is more than just a tasty side. Because asparagus is rich in folate&mdash;just four spears contain 89 micrograms of the nutrient, or roughly 22 percent of your recommended daily value&mdash;it's one of the best foods for diabetics. According to a meta-analysis published in&nbsp;<a href="https://www.diabetesresearchclinicalpractice.com/article/S0168-8227(12)00215-X/abstract" target="_blank" rel="noopener noreferrer"><em>Diabetes Research and Clinical Practice</em></a>, folic acid supplementation can lower cardiovascular risk among patients with Type 2 diabetes by reducing homocysteine levels, an amino acid that's been linked to increased risk of mortality when present in high levels in diabetic patients.</p>
+                    <div id="square-fixed-7" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier3">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Red Onion</h2>
+                        </div>
+                    </div>
+                    <figure id="351521" class="alignnone "><img class="alignnone wp-image-351521 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/749064324/sliced-onions.jpg?resize=600%2C439&amp;ssl=1 600w" alt="red onion" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Trust us: it's worth the tears. A Canadian study published in the&nbsp;<em><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3827013/" target="_blank" rel="noopener noreferrer">American Journal of Clinical Nutrition</a></em>&nbsp;discovered that a type of gut-healthy insoluble fiber found in onions, called oligofructose, can increase levels of ghrelin&mdash;a hormone that controls hunger&mdash;and lower levels of blood sugar. This allium can help diabetics in another way, as well. Thanks to their bioactive sulfur-containing compounds, onions can help lower cholesterol, ward off hardening of the arteries, and help maintain healthy blood pressure levels, according to a study published in the&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4594049/" target="_blank" rel="noopener noreferrer"><em>Evidence-Based Complementary and Alternative Medicine</em></a>.</p>
+                    <p>Pro tip: Eat your onions raw whenever you can for better benefits; a&nbsp;<em><a href="https://www.ncbi.nlm.nih.gov/pubmed/22881190" target="_blank" rel="noopener noreferrer">Journal of Agricultural and Food Chemistry</a></em>&nbsp;study found the cholesterol-lowering properties were stronger in onions that were raw compared to those eaten cooked. Think: pico de gallo, sliced onions on sandwiches and burgers, or served in a Greek cucumber and tomato salad.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Zucchini</h2>
+                        </div>
+                    </div>
+                    <figure id="1" class="alignnone ">
+                        <figure id="359857" class="alignnone"><img class="alignnone size-medium wp-image-359857 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=272%2C199&amp;ssl=1 272w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=473%2C346&amp;ssl=1 473w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/199879147/zucchini.jpg?resize=82%2C60&amp;ssl=1 82w" alt="zucchini" data-recalc-dims="1" data-lazy-loaded="1" />
+                            
+                        </figure>
+                        
+                    </figure>
+                    <p>If you love spaghetti and meatballs, swapping in veggies for grains should be your go-to move if you have diabetes. "Zucchini noodles and spaghetti squash are both easy and delicious ways to&nbsp;<a href="https://www.eatthis.com/carb-cutting-hacks/">lower the amount of carbohydrates</a>&nbsp;in some of your favorite dishes," says Zanini.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Green Tea</h2>
+                        </div>
+                    </div>
+                    <figure id="356177" class="alignnone "><img class="alignnone wp-image-356177 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/188220029/green-tea-brewed.jpg?resize=600%2C439&amp;ssl=1 600w" alt="green tea" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Zanini is a huge fan of&nbsp;<a href="https://www.eatthis.com/green-tea-weight-loss/">green tea</a>&mdash;and with good reason. Because it is hydrating and filling, green tea can help prevent overeating, which will both stabilize blood sugar levels and aid weight loss efforts by boosting feelings of satiety. "This drink also increases your metabolism and reduces fat storage," Zanini adds.</p>
+                    <div id="square-fixed-8" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier4">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Oats</h2>
+                        </div>
+                    </div>
+                    <figure id="353111" class="alignnone "><img class="alignnone wp-image-353111 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/173191863/oatmeal-weight-loss.jpg?resize=600%2C439&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>"Oats contain a type of fiber called beta-glucan, which seems to have an anti-diabetic effect," explains Newgent. Specifically, a review published in&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2663451/" target="_blank" rel="noopener noreferrer"><em>Vascular Health and Risk Management</em></a>&nbsp;concluded that beta-glucans help to reduce high blood sugar and blood pressure, adding, "I advise people with diabetes to&nbsp;<a href="https://www.eatthis.com/medical-experts-tips-cut-sugar/">steer clear of added sugars</a>&nbsp;by enjoying savory rather than sweet oatmeal." Try making oatmeal overnight with one of our&nbsp;<a href="https://www.eatthis.com/overnight-oat-recipes-for-weight-loss/" target="_blank" rel="noopener noreferrer">overnight oats recipes for weight loss</a>.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Cauliflower</h2>
+                        </div>
+                    </div>
+                    <figure id="350738" class="alignnone "><img class="alignnone wp-image-350738 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/407850298/whole-cauliflower.jpg?resize=600%2C439&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Check out the power of the cauliflower. Grate it up, and cauliflower rice is a great low-carb substitute for refined white rice, which can help keep your blood sugar levels more stable. Plus, cauliflower is rich in sulforaphane: a compound which a&nbsp;<a href="http://stm.sciencemag.org/content/9/394/eaah4477.full" target="_blank" rel="noopener noreferrer"><em>Science Translational Medicine</em></a>&nbsp;study found can inhibit glucose production in cells and improves glucose tolerance in rodents on high-fat or high-fructose diet.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Broccoli Sprouts</h2>
+                        </div>
+                    </div>
+                    <figure id="391418"><img class="wp-image-391418 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=473%2C346&amp;ssl=1 473w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/broccoli-sprouts.jpg?resize=183%2C133&amp;ssl=1 183w" alt="broccoli sprouts" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>You may not think much of broccoli sprouts when they pop up on your salad or sandwich, but these little guys are a powerful&nbsp;<a href="https://www.eatthis.com/anti-inflammatory-foods/">anti-inflammatory</a>. They're packed with sulforaphane, which may help protect against cancer according to a study published in&nbsp;<em><a href="http://cancerpreventionresearch.aacrjournals.org/content/2/4/353" target="_blank" rel="nofollow noopener noreferrer">Cancer Prevention Research</a>.</em>&nbsp;Rich in fiber, broccoli sprouts are "a potent detoxifier and play a role in decreasing cancer risk," says&nbsp;<a href="https://www.fit4d.com/nicole-anziani/" target="_blank" rel="noopener noreferrer">Nicole Anziani</a>, MS, RD, CDN, CDE and Clinical Manager at Fit4D.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Edamame</h2>
+                        </div>
+                    </div>
+                    <figure id="356600" class="alignnone "><img class="alignnone wp-image-356600 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/650050904/edamame.jpg?resize=600%2C440&amp;ssl=1 600w" alt="edamame" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>"Edamame delivers a unique nutrition profile that could offer multiple benefits for those living with diabetes," Jenna Braddock, RDN, CSSD, sports dietitian and blogger at&nbsp;<a href="https://jennabraddock.com/" target="_blank" rel="noopener noreferrer">MakeHealthyEasy</a>. "First, the fiber content of one cup is a staggering 10 grams, which could be very helpful in regulating blood sugar spikes and also contributes to reducing risk for heart disease. Second, as a plant-based source of protein, it could help reduce disease risk factors when it replaces meat in the diet. Lastly, edamame is a good source of the essential nutrient choline, and research shows that 9 out of ten Americans don't get enough of in the diet. Choline is important for helping to reduce homocysteine levels in the blood, a marker connected to increased risk of heart disease and connected to vascular disease in diabetes."</p>
+                    <div id="square-fixed-9" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier1">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Carrots</h2>
+                        </div>
+                    </div>
+                    <figure id="371645" class="alignnone"><img class="alignnone wp-image-371645 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/868845328/raw-carrots.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Carrots" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Instead of reaching for pretzels, chips, or another high-carb, high-calorie snack, carrots make for a healthy, low-calorie alternative. They are packed with vitamins C, D, E, and K, and the antioxidant beta-carotene, and make for a good low-carb snack when dunked in hummus or guacamole.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Eggs</h2>
+                        </div>
+                    </div>
+                    <figure id="354370" class="alignnone "><img class="alignnone wp-image-354370 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/964117501/whole-eggs-carton.jpg?resize=600%2C439&amp;ssl=1 600w" alt="eggs" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Eggs are a great source of protein. Anziani recommends opting for pasture-raised, organic omega-3 eggs. "The yolk will concentrate the omega-3 fed to the chickens," she says, adding that these eggs are "a good source of choline and protein, but limit to under five per week."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <div class="title-number"><span class="digits">30</span></div>
+                            <h2 class="title">Tomatoes</h2>
+                        </div>
+                    </div>
+                    <figure id="357786" class="alignnone"><img class="alignnone wp-image-357786 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=272%2C199&amp;ssl=1 272w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=473%2C346&amp;ssl=1 473w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/927711958/cherry-tomatoes-11-foods-end-bad-moods.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Cherry tomatoes" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Instead of choosing starchier veggies that can raise blood sugar, Anziani likes tomatoes to add to a salad or as a snack for a flavorful option that's low-calorie. They are also a good source of the antioxidant lycopene, which can help fight inflammation.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Sardines</h2>
+                        </div>
+                    </div>
+                    <figure id="358292" class="alignnone"><img class="alignnone size-medium wp-image-358292 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=500%2C367&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/213363442/sardines.jpg?resize=600%2C440&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <div id="square-fixed-10" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier2">&nbsp;</div>
+                    <p>These fatty fish are some of the healthiest cold water fish, says Anziani. "[Sardines are] extremely convenient to eat when packaged as boneless and skinless in extra virgin olive oil," she says. Pour them over a salad with the olive oil dressing for a boost of healthy fats and protein to keep your blood sugar stable.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Hummus</h2>
+                        </div>
+                    </div>
+                    <figure id="379549" class="alignnone"><img class="alignnone size-medium wp-image-379549 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?w=640&amp;ssl=1" sizes="(max-width: 750px) 100vw, 750px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?w=750&amp;ssl=1 750w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=272%2C199&amp;ssl=1 272w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=473%2C346&amp;ssl=1 473w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=256%2C186&amp;ssl=1 256w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/869565089/hummus-and-vegetables.jpg?resize=82%2C60&amp;ssl=1 82w" alt="Hummus and vegetables" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Instead of fattier cheese or mayo, Anziani recommends hummus as a dip for veggies or low-carb crackers. "[Hummus] contains protein and a lot of taste for lower glycemic snacking," she says.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Organic Tofu &amp; Tempeh</h2>
+                        </div>
+                    </div>
+                    <figure id="359692" class="alignnone"><img class="alignnone size-medium wp-image-359692 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/827758570/cubed-tofu.jpg?resize=600%2C439&amp;ssl=1 600w" alt="tofu" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Although vegetarians might have a tougher time getting protein in their diet, Anziani recommends organic tofu. Tofus absorbs the flavor of whatever it is cooked with, making it extremely versatile. Another high-protein option is tempeh, a fermented soy protein that can replace animal protein. However, those with a&nbsp;<a href="https://www.eatthis.com/thyroid-disease-symptoms/">thyroid condition</a>&nbsp;should only consume tofu or tempeh two to three times a week.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Sweet Potato</h2>
+                        </div>
+                    </div>
+                    <figure id="384733" class="alignnone"><img class="alignnone size-medium wp-image-384733 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=272%2C199&amp;ssl=1 272w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=473%2C346&amp;ssl=1 473w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/sweet-potato.jpg?resize=82%2C60&amp;ssl=1 82w" alt="Sweet potatoes" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Anziani says that although sweet potatoes are starchy, they're rich in beta-carotene, which is converted into the essential vitamin A. Sweet potatoes are also lower on the glycemic index than regular white potatoes, cementing their place among the best foods for diabetics. Treat sweet potatoes as your main starch for the meal and stick to a serving size&mdash;about &frac12; a cup baked or roasted. Keep the skin on for extra fiber.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">MCT Oil</h2>
+                        </div>
+                    </div>
+                    <figure id="389737"><img class="wp-image-389737 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/2017/11/mct-oil.jpg?resize=183%2C133&amp;ssl=1 183w" alt="MCT Oil" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <div id="square-fixed-11" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier3">&nbsp;</div>
+                    <p>MCT oil, named for the medium-chain triglycerides, a type of fatty acids, has been praised for its&nbsp;<a href="https://www.eatthis.com/foods-for-brain/" target="_blank" rel="noopener noreferrer">brain-boosting benefits</a>, but it can also be used in small amounts to replace other fat sources. "MCT oil can be used in smoothies or drizzled over salads," Anziani says, "It is tasteless and may be used as fuel preferentially, versus being stored as fat."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Pumpkin</h2>
+                        </div>
+                    </div>
+                    <figure id="368216" class="alignnone "><img class="alignnone size-medium wp-image-368216 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/876043154/pumpkin-sliced.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/876043154/pumpkin-sliced.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/876043154/pumpkin-sliced.jpg?resize=500%2C376&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/876043154/pumpkin-sliced.jpg?resize=768%2C578&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/876043154/pumpkin-sliced.jpg?resize=600%2C451&amp;ssl=1 600w" alt="pumpkin" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Stock up on fresh pumpkin and pumpkin puree during the fall season. This super squash is rich in beta-carotene and adds a boost of seasonal flavor. "It can be a nice addition to oatmeal, yogurt, smoothies, or cooked as the starch component of dinner," Anziani says.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Dark Chocolate</h2>
+                        </div>
+                    </div>
+                    <figure id="388621" class="alignnone"><img class="alignnone size-medium wp-image-388621 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=272%2C199&amp;ssl=1 272w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=473%2C346&amp;ssl=1 473w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/10/dark-chocolate-bar-squares.jpg?resize=82%2C60&amp;ssl=1 82w" alt="Dark chocolate" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Watching your blood sugar doesn't mean you have to give up dessert entirely. Dark chocolate that's 70% cacao or above can have health benefits without spiking blood sugar; just pay attention to the ingredients and nutrition label. "One ounce or square can be consumed per day to strategically lower the stress hormone cortisol and keep milk chocolate cravings at bay," Anziani, says. Cacao is also rich in antioxidants, which can help fight inflammation.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Shirataki Noodles</h2>
+                        </div>
+                    </div>
+                    <figure id="389742"><img class="wp-image-389742 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=272%2C199&amp;ssl=1 272w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=473%2C346&amp;ssl=1 473w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/2017/11/shirataki-noodles-pasta.jpg?resize=82%2C60&amp;ssl=1 82w" alt="shirataki noodles" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Even diabetics can enjoy pasta. Shirataki noodles are made from yam flour for a low-carb and super low-calorie option. "These noodles have 0-20 calories per package and can be prepared in meals that would call for carby noodles," Anziani says.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Bok Choy</h2>
+                        </div>
+                    </div>
+                    <figure id="361461" class="alignnone"><img class="alignnone size-medium wp-image-361461 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/624462223/bok-choy.jpg?resize=600%2C439&amp;ssl=1 600w" alt="bok choy" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <div id="square-fixed-12" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier4">&nbsp;</div>
+                    <p>"All vegetables are good sources of nutrition but dark green leafy vegetables like kale, spinach, bok choy, mustard, and broccoli provide vitamins like A, C, E, K and folate as well as fiber, iron and several minerals like calcium,"&nbsp;<a href="https://providers.ucsd.edu/details/32968/byron-richard-nutrition_counseling-la_jolla-san_diego" target="_blank" rel="noopener noreferrer">Byron Richard</a>, MS, RD, CDE, Clinical Nutrition Manager UC San Diego Health, says, "Leafy greens, as most non-starchy vegetables, have a low GI are low in calories and carbohydrates."</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Celery</h2>
+                        </div>
+                    </div>
+                    <figure id="359815"><img class="wp-image-359815 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/291923838/celery-stalks.jpg?resize=600%2C439&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Celery is an alkaline food that makes for an easy snack; Anziani likes that celery is nearly calorie-free. Slice up some celery to dip in hummus or fill with almond or peanut butter.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Vegan Protein Powder</h2>
+                        </div>
+                    </div>
+                    <figure id="360791"><img class="wp-image-360791 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=272%2C199&amp;ssl=1 272w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=473%2C346&amp;ssl=1 473w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/566010110/protein-powder-nutritional-supplement.jpg?resize=82%2C60&amp;ssl=1 82w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Smoothies, especially those with a lot of fruit, can have too much sugar for diabetics. But a good high-quality, low-sugar&nbsp;<a href="https://www.eatthis.com/best-vegan-protein-powders/">vegan protein powder</a>&nbsp;can be an excellent meal replacement when shaken with unsweetened almond or coconut milk says Anziani. We like Vega One All-In-One Nutritional Shake Blend ($51.99 for large tun on&nbsp;<a href="http://amzn.to/2zomjJ4" target="_blank" rel="nofollow noopener noreferrer">Amazon</a>). Each scoop is 137 calories, 11 grams of carbs, 2 grams of sugar, 6 grams of fiber and 15 grams of protein. Blend a low-sugar,&nbsp;<a href="https://www.eatthis.com/best-protein-shake-recipes-from-diet-fitness-experts/">high-protein smoothie</a>&nbsp;with spinach, chia seeds, unsweetened almond milk, and a handful of berries for sweetness.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Bitter Melon</h2>
+                        </div>
+                    </div>
+                    <figure id="367739"><img class="wp-image-367739 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/637159327/bitter-melon.jpg?resize=600%2C439&amp;ssl=1 600w" alt="bitter melon" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Bitter melons aren't all that common; after all, as the name suggests, they are very bitter, Anziani says. However, she adds that it has been proven to lower blood sugar. A study published in the&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/21211558/" target="_blank" rel="noopener noreferrer"><em>Journal of Ethnopharmacology</em></a>&nbsp;found that 2,000 milligrams of bitter melon a day lowers blood glucose levels in people with type 2 diabetes.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Seltzer</h2>
+                        </div>
+                    </div>
+                    <figure id="359890"><img class="wp-image-359890 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=768%2C562&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=256%2C186&amp;ssl=1 256w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=177%2C128&amp;ssl=1 177w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/343849837/sparkling-water.jpg?resize=600%2C439&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <div id="square-fixed-13" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier1">&nbsp;</div>
+                    <p>Instead of&nbsp;<a href="https://www.eatthis.com/soda/">sodas</a>&nbsp;and sweetened beverages, which can pack up to 40 grams of sugar per serving and can wreak havoc on blood sugar levels, Anziani recommends opting for unsweetened seltzer instead. Try a low-calorie flavored brand like&nbsp;<a href="https://amzn.to/2SfXtBE" target="_blank" rel="nofollow noopener noreferrer">Spindrift</a>, or buy plain&nbsp;<a href="https://www.eatthis.com/difference-club-soda-vs-seltzer-sparkling-water/">club soda or seltzer</a>&nbsp;and flavor yourself with a squeeze of lemon, lime, or fresh mint sprigs.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Walnuts</h2>
+                        </div>
+                    </div>
+                    <figure id="360289" class="alignnone"><img class="alignnone size-medium wp-image-360289 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?w=1024&amp;ssl=1 1024w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=500%2C366&amp;ssl=1 500w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=768%2C563&amp;ssl=1 768w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=300%2C220&amp;ssl=1 300w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=826%2C606&amp;ssl=1 826w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=205%2C150&amp;ssl=1 205w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=684%2C500&amp;ssl=1 684w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=640%2C468&amp;ssl=1 640w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=343%2C250&amp;ssl=1 343w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=183%2C133&amp;ssl=1 183w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=244%2C178&amp;ssl=1 244w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=264%2C192&amp;ssl=1 264w, https://i1.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/312183371/heart-health-walnuts.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Walnuts" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Nuts are some of the best foods for diabetics since they are low in carbs, high in healthy fats, and high in fiber. Walnuts are one of the best nuts available because of their&nbsp;<a href="https://www.eatthis.com/omega-3-foods/">high omega-3 content</a>&nbsp;Anziani says&mdash;one serving (about &frac14; a cup) has almost 3 grams of omega-3s. Just be sure to stick to one serving size so as not to go overboard on calories.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Chickpeas</h2>
+                        </div>
+                    </div>
+                    <figure id="373322"><img class="wp-image-373322 size-medium jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=272%2C199&amp;ssl=1 272w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=473%2C346&amp;ssl=1 473w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/985079485/roasted-chickpeas.jpg?resize=82%2C60&amp;ssl=1 82w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Like other beans, chickpeas are a high-fiber legume that can be eaten instead of animal protein, Anziani recommends. Roasted and seasoned chickpeas also make for a good high-fiber,&nbsp;<a href="https://www.eatthis.com/10-best-low-carb-snacks-weight-loss/">low-carb snack</a>&nbsp;compared to other high glycemic options such as pretzels and potato chips.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Flax Crackers</h2>
+                        </div>
+                    </div>
+                    <figure id="378184" class="alignnone "><img class="alignnone size-medium wp-image-378184 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?w=640&amp;ssl=1" sizes="(max-width: 850px) 100vw, 850px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?w=850&amp;ssl=1 850w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=768%2C562&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=256%2C186&amp;ssl=1 256w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/137009891/avocado-crackers-spread.jpg?resize=600%2C439&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Instead of other high-carb crackers, opt for high-fiber flax crackers. They're an excellent base for hummus, guacamole, or turkey slices. We like&nbsp;<a href="http://amzn.to/2hNfE1w" target="_blank" rel="nofollow noopener noreferrer">Mary's Gone Crackers Super Seed Crackers</a>&nbsp;which are just 160 calories per serving and have 19 grams of carbs, 3 grams of fiber, 0 grams of sugar, and 3 grams of protein.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Bone Broth</h2>
+                        </div>
+                    </div>
+                    <figure id="350145" class="alignnone "><img class="alignnone wp-image-350145 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads//media/images/ext/806463001/bone-broth.jpg?resize=600%2C439&amp;ssl=1 600w" alt="" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p>Bone broth is rich in collagen, which can make for a protein-packed and satiating snack and one of the best foods for diabetics, Anziani says. Sip some warm broth for an afternoon snack to keep you satisfied until dinnertime. We like&nbsp;<a href="http://amzn.to/2v6GwPz" target="_blank" rel="nofollow noopener noreferrer">Pacific Foods</a>&nbsp;for a tasty and affordable option.</p>
+                    <div id="square-fixed-14" class="karma_unit inline hide-mobile" data-slot="div-gpt-lazy-square-fixed-tier2">&nbsp;</div>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Lean Chicken</h2>
+                        </div>
+                    </div>
+                    <figure id="384718" class="alignnone "><img class="alignnone size-medium wp-image-384718 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?w=1024&amp;ssl=1 1024w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=500%2C366&amp;ssl=1 500w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=768%2C563&amp;ssl=1 768w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=300%2C220&amp;ssl=1 300w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=826%2C606&amp;ssl=1 826w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=205%2C150&amp;ssl=1 205w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=684%2C500&amp;ssl=1 684w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=640%2C468&amp;ssl=1 640w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=343%2C250&amp;ssl=1 343w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=183%2C133&amp;ssl=1 183w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=244%2C178&amp;ssl=1 244w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=264%2C192&amp;ssl=1 264w, https://i2.wp.com/www.eatthis.com/wp-content/uploads/2017/10/Chicken-breast-title-2.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Chicken breasts" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    <p><a href="https://www.eatthis.com/complementary-proteins/">Combining proteins</a>&nbsp;are key in keeping your blood sugar down while also leaving you feeling satisfied. Anziani recommends a&nbsp;<a href="https://www.eatthis.com/lean-protein/">lean protein</a>&nbsp;like chicken because it's nearly pure protein, highly satiating, and versatile for a variety of recipes. "A good portion of protein is a palm-sized piece at meals, or about 22 grams per meal," she says.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Wild Rice</h2>
+                        </div>
+                    </div>
+                    <figure id="360737" class="alignnone"><img class="alignnone size-medium wp-image-360737 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/806435485/wild-rice.jpg?resize=600%2C439&amp;ssl=1 600w" alt="wild rice" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>You don't have to give up rice entirely if you're diabetic. Anziani likes wild rice because it's high in fiber. She says it's an ancient grain that is actually a grass and is high in manganese, zinc, iron, and folate.</p>
+                    <div class="number-head-mod number-head-mod-standalone">
+                        <div class="header-mod">
+                            <h2 class="title">Bell Peppers</h2>
+                        </div>
+                    </div>
+                    <figure id="374004" class="alignnone"><img class="alignnone size-medium wp-image-374004 jetpack-lazy-image jetpack-lazy-image--handled" src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?w=640&amp;ssl=1" sizes="(max-width: 1000px) 100vw, 1000px" srcset="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?w=1024&amp;ssl=1 1024w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=500%2C366&amp;ssl=1 500w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=768%2C563&amp;ssl=1 768w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=300%2C220&amp;ssl=1 300w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=826%2C606&amp;ssl=1 826w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=205%2C150&amp;ssl=1 205w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=684%2C500&amp;ssl=1 684w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=640%2C468&amp;ssl=1 640w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=343%2C250&amp;ssl=1 343w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=183%2C133&amp;ssl=1 183w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=244%2C178&amp;ssl=1 244w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=264%2C192&amp;ssl=1 264w, https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/504246885/bell-peppers.jpg?resize=600%2C439&amp;ssl=1 600w" alt="Bell peppers" data-recalc-dims="1" data-lazy-loaded="1" />
+                        
+                    </figure>
+                    
+                    <p>Red, green, orange, and yellow bell peppers aren't just colorful additions to your salad; they can be a blood sugar-friendly snack all on their own. They have a sweeter taste without the sugar content of most fruit (about 3 grams of sugar per medium bell pepper). Anziani also likes how they are&nbsp;<a href="https://www.eatthis.com/what-are-the-best-vitamin-c-rich-foods/">rich in vitamin C</a>&nbsp;and also have a satisfying crunch. Slice them up and enjoy them as a snack with hummus or guacamole.</p>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
