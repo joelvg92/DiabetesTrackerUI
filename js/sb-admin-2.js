@@ -578,6 +578,7 @@ function getTime(field) {
 
   $("#logoutProcess").click(function(){
     localStorage.removeItem("user");
+    localStorage.removeItem("username");
     window.location = "login.html";
   });
 
