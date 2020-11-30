@@ -84,7 +84,8 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
+                    <div id="alertss"></div>
+                    <hr>
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
@@ -248,7 +249,7 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="time">Default Time Picker:</label>
-                                                                    <input type="time" id="time" class="form-control" placeholder="Select time">
+                                                                    <input type="time" id="time" class="form-control" placeholder="Select time" required>
                                                                 </div>
                                                                 <div class="form-group form-check">
                                                                     <input class="form-check-input" type="checkbox" id="description1" value="Before meal">
@@ -290,8 +291,8 @@
                                                         <div class="modal-body">
                                                             <form action=""  id="addMeal" method="post">
                                                                 <div class="form-group">
-                                                                    <input type="hidden" id="foodInfo" name="foodInfo">
-                                                                    <label for="reading">Enter meal name:</label>
+                                                                    <input type="hidden" id="foodInfo" name="foodInfo" required>
+                                                                    <label for="reading">Enter meal name and press search:</label>
                                                                     <div class ="input-group">
                                                                         <input type="search" class="form-control py-2" id="mealName"  placeholder="" name="mealName" required>
                                                                         <span class="input-group-append">
@@ -363,8 +364,8 @@
                                                         <div class="modal-body">
                                                             <form action=""  id="addMedical" method="post">
                                                                 <div class="form-group">
-                                                                    <input type="hidden" id="medicalInfo" name="medicalInfo">
-                                                                    <label for="reading">Enter medicine name:</label>
+                                                                    <input type="hidden" id="medicalInfo" name="medicalInfo" required>
+                                                                    <label for="reading">Enter medicine name and press search:</label>
                                                                     <div class ="input-group">
                                                                         <input type="search" class="form-control py-2" id="medicineName"  placeholder="" name="medicineName" required>
                                                                         <span class="input-group-append">
@@ -444,7 +445,7 @@
 
                                                             <!-- Modal Header -->
                                                             <div class="modal-header">
-                                                                <h4 class="modal-title">View daily meal record</h4>
+                                                                <h4 class="modal-title">View past daily diabetic records</h4>
                                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                             </div>
 
@@ -461,14 +462,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a href="#" id="pastMeals" data-toggle="modal" data-target="#pastMealsModal" class="list-group-item list-group-item-action">View daily meal record</a>
+                                                <a href="#" id="pastMeals" data-toggle="modal" data-target="#pastMealsModal" class="list-group-item list-group-item-action">View daily meal records</a>
                                                 <div class="modal" id="pastMealsModal">
                                                     <div class="modal-dialog modal-lg modal-lg">
                                                         <div class="modal-content">
 
                                                             <!-- Modal Header -->
                                                             <div class="modal-header">
-                                                                <h4 class="modal-title">View daily meal record</h4>
+                                                                <h4 class="modal-title">View past daily meal record</h4>
                                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                             </div>
 
@@ -492,7 +493,7 @@
 
                                                             <!-- Modal Header -->
                                                             <div class="modal-header">
-                                                                <h4 class="modal-title">View daily meal record</h4>
+                                                                <h4 class="modal-title">View past daily medication record</h4>
                                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                             </div>
 

@@ -149,11 +149,28 @@ function getData3(){
       }else{
         $('#diabeticRecordStatus').text('Diabetic record is normal,good job!!');
       }
+      if(results.length<=7){
+        var length =(7 - results.length);
+        for(var j=0; j<length; j++){
+          results.unshift(0);
+        }
+      }
+      console.log(results[6]);
+      if(results[6]==Number(0)) {
+        addAlert('Please take your medications and enter the blood sugar reading');
+      }
     },
     error: function (xhr, textStatus, errorThrown) {
       console.log('Error: ' + xhr.responseText);
     }
   })
+}
+
+function addAlert(message) {
+  $('#alertss').append(
+      '<div class="alert alert-success alert-dismissible">' +
+      '<button type="button" class="close" data-dismiss="alert">' +
+      '&times;</button>' + message + '</div>');
 }
 
 function getTime(field) {
