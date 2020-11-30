@@ -366,6 +366,11 @@ $('#mealName').keyup(function(){
     $('#searchFood').modal('hide');
   });
 
+  $("#logoutProcess").click(function(){
+    localStorage.removeItem("user");
+    window.location = "login.html";
+  });
+
   $("#searchMedicine #searchMedicineTable").on("click", "#selectMedicineButton", function(){
     var $row = $(this).closest("tr"),       // Finds the closest row <tr>
         $tds = $row.find("td");             // Finds all children <td> elements
