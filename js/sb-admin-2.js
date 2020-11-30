@@ -70,7 +70,7 @@ function getData(){
   var patientId = localStorage.getItem("user");
   $.ajax({
     type: "GET",
-    url:"http://localhost:8080/nutritionOrder/"+ patientId,
+    url:"https://diabetes-tracker-backend.herokuapp.com/nutritionOrder/"+ patientId,
     async: true,
     success: function (data) {
       var resultSet = updateData(data);
@@ -96,7 +96,7 @@ function getData2(){
   var results = [];
   $.ajax({
     type: "GET",
-    url:"http://localhost:8080/nutritionOrder/"+ patientId,
+    url:"https://diabetes-tracker-backend.herokuapp.com/nutritionOrder/"+ patientId,
     async: true,
     success: function (data) {
       resultSet = updateData(data);
@@ -131,7 +131,7 @@ function getData3(){
   var results = [];
   $.ajax({
     type: "GET",
-    url:"http://localhost:8080/observation/"+ patientId,
+    url:"https://diabetes-tracker-backend.herokuapp.com/observation/"+ patientId,
     async: true,
     success: function (data) {
       resultSet = updateData(data);
@@ -285,7 +285,7 @@ function getTime(field) {
     var password = $('#password').val();
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/login",
+      url: "https://diabetes-tracker-backend.herokuapp.com/login",
       data: JSON.stringify({ username: username, password: password }),
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
@@ -310,7 +310,7 @@ function getTime(field) {
     var age = $('#age').val();
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/signup",
+      url: "https://diabetes-tracker-backend.herokuapp.com/signup",
       data: JSON.stringify({ username: username, password: password, name:name,gender:gender,age:age,email:'testemail123@gmail.com',phone:'2012203000',dob:'1993-10-25' }),
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
@@ -334,7 +334,7 @@ function getTime(field) {
     var description = $('#description1').val() === null?$('#description2').val():$('#description1').val();
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/observation",
+      url: "https://diabetes-tracker-backend.herokuapp.com/observation",
       data: JSON.stringify({patientId:patientId,description:description , reading: reading, time: time}),
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
@@ -356,7 +356,7 @@ function getTime(field) {
     var unit= $('#foodInfo').val();
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/nutritionOrder",
+      url: "https://diabetes-tracker-backend.herokuapp.com/nutritionOrder",
       data: JSON.stringify({patientId:patientId,name:mealName , dosage: mealPortion,unit:unit, time: time}),
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
@@ -378,7 +378,7 @@ function getTime(field) {
     var unit= $('#medicationUnit').val();
     $.ajax({
       type: "POST",
-      url: "http://localhost:8080/medication",
+      url: "https://diabetes-tracker-backend.herokuapp.com/medication",
       data: JSON.stringify({patientId:patientId,name:medicineName , dosage: medicationDosage,unit:unit, time: medicationTime}),
       contentType: 'application/json',
       success: function(response, textStatus, xhr) {
@@ -397,7 +397,7 @@ function getTime(field) {
     var resultSet = null;
     $.ajax({
       type: "GET",
-      url:"http://localhost:8080/medication/"+ patientId,
+      url:"https://diabetes-tracker-backend.herokuapp.com/medication/"+ patientId,
       success: function (data) {
         resultSet = data;
         //$('#searchFood').modal('toggle');
@@ -431,7 +431,7 @@ function getTime(field) {
     var resultSet = null;
     $.ajax({
       type: "GET",
-      url:"http://localhost:8080/observation/"+ patientId,
+      url:"https://diabetes-tracker-backend.herokuapp.com/observation/"+ patientId,
       success: function (data) {
         resultSet = data;
         //$('#searchFood').modal('toggle');
@@ -461,7 +461,7 @@ function getTime(field) {
     var resultSet = null;
     $.ajax({
       type: "GET",
-      url:"http://localhost:8080/nutritionOrder/"+ patientId,
+      url:"https://diabetes-tracker-backend.herokuapp.com/nutritionOrder/"+ patientId,
       success: function (data) {
         resultSet = data;
         //$('#searchFood').modal('toggle');
@@ -495,7 +495,7 @@ function getTime(field) {
     var resultSet = null;
     $.ajax({
       type: "GET",
-      url:"http://localhost:8080/food/find?foodName="+ name,
+      url:"https://diabetes-tracker-backend.herokuapp.com/food/find?foodName="+ name,
       success: function (data) {
         resultSet = data.branded;
         $('#searchFood').modal('toggle');
@@ -529,7 +529,7 @@ function getTime(field) {
     var resultSet = null;
     $.ajax({
       type: "GET",
-      url:"http://localhost:8080/medication/find?medicationName="+ name,
+      url:"https://diabetes-tracker-backend.herokuapp.com/medication/find?medicationName="+ name,
       success: function (data) {
         resultSet = data;
         $('#searchMedicine').modal('toggle');

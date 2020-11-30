@@ -91,7 +91,7 @@ function getData(){
   var results = [];
   $.ajax({
     type: "GET",
-    url:"http://localhost:8080/observation/"+ patientId,
+    url:"https://diabetes-tracker-backend.herokuapp.com/observation/"+ patientId,
     async: false,
     success: function (data) {
       resultSet = updateData(data);
