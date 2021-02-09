@@ -1,1 +1,1 @@
-# Front end for the Diabetes tracker application.
+# Diabetes tracker UI application.
